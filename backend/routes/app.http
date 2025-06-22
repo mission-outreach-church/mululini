@@ -1,0 +1,110 @@
+### Get all sermons
+GET http://localhost:8000/api/sermons
+
+### Get a sermon by ID
+GET http://localhost:8000/api/sermons/1
+
+### Create a new sermon
+POST http://localhost:8000/api/sermons
+Content-Type: application/json
+
+{
+  "title": "Sample Sermon",
+  "preacher": "John Doe",
+  "date": "2025-06-22",
+  "description": "A sample sermon description.",
+  "audioUrl": "http://example.com/audio.mp3"
+}
+
+### Update a sermon
+PUT http://localhost:8000/api/sermons/1
+Content-Type: application/json
+
+{
+  "title": "Updated Sermon Title"
+}
+
+### Delete a sermon
+DELETE http://localhost:8000/api/sermons/1
+
+### Get all gallery items
+GET http://localhost:8000/api/gallery
+
+### Get a gallery item by ID
+GET http://localhost:3000/api/gallery/1
+
+### Create a new gallery item
+POST http://localhost:8000/api/gallery
+Content-Type: application/json
+
+{
+  "title": "Sample Image",
+  "imageUrl": "http://example.com/image.jpg",
+  "description": "A sample image description."
+}
+
+### Update a gallery item
+PUT http://localhost:8000/api/gallery/1
+Content-Type: application/json
+
+{
+  "title": "Updated Image Title"
+}
+
+### Delete a gallery item
+DELETE http://localhost:8000/api/gallery/1
+
+### Get all events
+GET http://localhost:8000/api/events
+
+### Get an event by ID
+GET http://localhost:8000/api/events/1
+
+### Create a new event
+POST http://localhost:8000/api/events
+Content-Type: application/json
+
+{
+  "name": "Sample Event",
+  "date": "2025-06-22",
+  "location": "Sample Location",
+  "description": "A sample event description."
+}
+
+### Update an event
+PUT http://localhost:8000/api/events/1
+Content-Type: application/json
+
+{
+  "name": "Updated Event Name"
+}
+
+### Delete an event
+DELETE http://localhost:8000/api/events/1
+
+### Get all services
+GET http://localhost:8000/api/services
+
+### Get a service by ID
+GET http://localhost:8000/api/services/1
+
+### Create a new service
+POST http://localhost:8000/api/services
+Content-Type: application/json
+
+{
+  "name": "Sample Service",
+  "description": "A sample service description.",
+  "schedule": "Every Sunday at 10am"
+}
+
+### Update a service
+PUT http://localhost:8000/api/services/1
+Content-Type: application/json
+
+{
+  "name": "Updated Service Name"
+}
+
+### Delete a service
+DELETE http://localhost:8000/api/services/1
